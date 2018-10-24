@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "pe.com.asur.asurapppasajero"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true //important
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //ADd Library
+    // compile 'com.google.firebase:firebase-core:11.8.0'
+
+    //alert diaglog con bolitas
+    //compile 'com.android.support:appcompat-v7:26.+'
+    //    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    //eh reducido la versin de play service por el emulador
+    //eh reducido la versin de play service por el emulador
+    //compile'com.firebase:geofire-android:2.3.0'
+
+    //implementation
+    // implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    //liberías nuevas
+
+
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.google.firebase:firebase-database:12.0.0'
+    compile 'com.google.firebase:firebase-auth:12.0.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.google.android.gms:play-services-maps:12.0.0'
+    compile 'com.google.android.gms:play-services:12.0.0'
+    compile 'com.firebase:geofire-android:2.2.0'
+    compile 'com.github.glomadrian:MaterialAnimatedSwitch:1.1@aar'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.google.maps.android:android-maps-utils:0.5'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.google.firebase:firebase-messaging:12.0.0'
+    compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.android.support:animated-vector-drawable:26.1.0'
+    compile 'com.android.support:mediarouter-v7:26.1.0'
+    compile 'com.google.android.gms:play-services-location:12.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-storage:12.0.0'
+    compile 'me.zhanghai.android.materialratingbar:library:1.2.0'
+    compile 'io.paperdb:paperdb:2.6'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

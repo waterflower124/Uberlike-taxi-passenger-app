@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pe.com.asur.asurapppasajero.CallDriver">
+    
+    <android.support.v7.widget.CardView
+        android:layout_margin="16dp"
+        app:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_image"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_terrain_black_24dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_color="#5e1e1e1e"
+                app:civ_border_width="1dp"
+
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Nombre del Chofer: "
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:text="Jose Tejada"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Celular: "
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:text="988679182"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Calificación: "
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_rate"
+                    android:text="4/5"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_call_driver"
+
+                android:textColor="@android:color/white"
+                android:text="Seleccionar Movil"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_call_driver_phone"
+
+                android:textColor="@android:color/white"
+                android:text="Llamar Celular"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

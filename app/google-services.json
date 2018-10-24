@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "88413771227",
+    "firebase_url": "https://asur-142af.firebaseio.com",
+    "project_id": "asur-142af",
+    "storage_bucket": "asur-142af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88413771227:android:35f903e2db6d21e7",
+        "android_client_info": {
+          "package_name": "pe.com.asur.asurapppasajero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88413771227-oi3fdk8bl7qo8n383er0i57odkjgnmeg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.com.asur.asurapppasajero",
+            "certificate_hash": "4b1272a3635bd3b8b9a351790dc4fa53dc9860d8"
+          }
+        },
+        {
+          "client_id": "88413771227-pmbcbtke1a6lj7ddurupnfa7upd496gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDAX8Vki4bNFsQD6I_uwj38oSl-Eu_0Zw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88413771227-pmbcbtke1a6lj7ddurupnfa7upd496gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
